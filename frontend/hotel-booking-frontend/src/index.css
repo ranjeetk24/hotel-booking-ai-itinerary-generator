@@ -1,0 +1,21 @@
+body { padding-top: 70px; }
+.hero-under-nav { margin-top: -70px; } /* same as navbar height */
+
+/* Sticky footer layout */
+html, body, #root {
+  height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* The main content grows to push footer down */
+.app-main {
+  flex: 1 0 auto;
+}
+
+footer {
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.06);
+}
